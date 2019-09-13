@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "dependencies": {
     "expo": "^34.0.1",
@@ -36,10 +36,10 @@
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|sentry-expo|native-base)"
     ],
     "setupFilesAfterEnv": [
-      "<rootDir>/__tests__/tools/setupEnzyme.js"
+      "<rootDir>/__tests__/setupEnzyme.js"
     ],
     "testPathIgnorePatterns": [
-      "<rootDir>/__tests__/tools",
+      "<rootDir>/__tests__/setupEnzyme.js",
       "<rootDir>/node_modules"
     ],
     "collectCoverage": true
