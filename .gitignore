@@ -10,3 +10,4 @@ coverage
 *.orig.*
 web-build/
 web-report/
+.env
